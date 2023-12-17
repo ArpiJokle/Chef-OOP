@@ -1,9 +1,9 @@
 t   Tomato       100 21  8.4 yellow
 t   TomatoSLiva  110 24  10.8  red
 t   TomatoCherry 250 50  5.1   red
-p   BellPepper   90  24  11.5  yellow 0
-p   BellPepper   90  26  12.9  red    0
-p   Chilli       41  10  25    red    1
+p   BellPepper   90  24  11.5  yellow   0
+p   BellPepper   90  26  12.9  red      0
+p   Chilli       41  10  25    red      1
 a   CarrotFarm   83  35  2.19  12
 a   Carrot       113 38  1.21  15
-u   Cucumber     120 18  6.99  4   0
+u   Cucumber     120 18  6.99  4    0
