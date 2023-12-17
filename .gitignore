@@ -1,2 +1,2 @@
-build/main.exe
-objects/main.o
+*.exe
+*.o
