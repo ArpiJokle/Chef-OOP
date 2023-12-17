@@ -1,4 +1,4 @@
-t   Tomato 100   21  8.4 yellow
+t   Tomato       100 21  8.4 yellow
 t   TomatoSLiva  110 24  10.8  red
 t   TomatoCherry 250 50  5.1   red
 p   BellPepper   90  24  11.5  yellow 0

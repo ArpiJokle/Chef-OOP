@@ -7,14 +7,14 @@ private:
     std::vector<std::shared_ptr<BaseVegetable>> data;
     double weight = 0;
     double cost = 0;
-    double caloticity = 0;
+    int caloticity = 0;
 
 public:
     Salad() = default;
     ~Salad() = default;
     double getCost() const { return cost; }
     double getWeight() const { return weight; }
-    double getCaloricity() const { return caloticity; }
+    int getCaloricity() const { return caloticity; }
     size_t getSize() const { return data.size(); }
     void sortByName();
     void sortByCost();
@@ -23,12 +23,12 @@ public:
     void print(std::ostream &);
     void createByWeight(double, Vegetables &);
     void createByCost(double, Vegetables &);
-    void createByCaloricity(double, Vegetables &);
-    void findVegsCaloricity(double min, double max);
-    void findMinVegsCaloricity(double min, double max);
+    void createByCaloricity(int, Vegetables &);
+    void findVegsCaloricity(int min, int max);
+    void findMinVegsCaloricity(int min, int max);
 };
 
-void Salad::findVegsCaloricity(double min, double max)
+void Salad::findVegsCaloricity(int min, int max)
 {
     std::sort(data.begin(), data.end(),
               [](std::shared_ptr<BaseVegetable> a,
@@ -53,7 +53,7 @@ void Salad::findVegsCaloricity(double min, double max)
     }
 }
 
-void Salad::findMinVegsCaloricity(double min, double max)
+void Salad::findMinVegsCaloricity(int min, int max)
 {
     std::sort(data.begin(), data.end(),
               [](std::shared_ptr<BaseVegetable> a,
@@ -125,7 +125,7 @@ void Salad::createByCost(double MaxCost, Vegetables &veg)
     *this = salad;
 }
 
-void Salad::createByCaloricity(double MaxCaloricity, Vegetables &veg)
+void Salad::createByCaloricity(int MaxCaloricity, Vegetables &veg)
 {
     bool flag = true;
     Salad salad;
