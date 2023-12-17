@@ -1,0 +1,15 @@
+#pragma once
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <algorithm>
+#include <vector>
+#include <iterator>
+#include <memory>
+#include "base.h"
+#include "carrot.h"
+#include "cucumber.h"
+#include "tomato.h"
+#include "pepper.h"
+#include "vegetables.h"
+#include "salad.h"
